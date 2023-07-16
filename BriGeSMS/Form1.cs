@@ -1,10 +1,7 @@
 ﻿
+using SmSGateWay_Framework;
 using System;
 using System.Windows.Forms;
-using System.Runtime;
-using System.IO;
-using System.Threading.Tasks;
-using SmSGateWay_Framework;
 
 namespace BriGeSMS
 {
@@ -29,7 +26,7 @@ namespace BriGeSMS
                 if ((textBox1.Text != "") && (textBox2.Text != "") && (textBox3.Text != ""))
                 {
                     //MessageBox.Show("Envoi de message réussi", "BriGeSMS");
-                    SmSGateWay_Framework.
+                   
 
                     LampushGateWay gateway = new LampushGateWay("AhloncoTogo", "e7jnZF6BjU3X9a7", textBox1.Text);
                     // await gateway.SendMessage("Test from console", "+22890913661");
